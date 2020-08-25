@@ -4,9 +4,6 @@ import './Room.css';
 function Room() {
     let [isLit, setLit] = useState(false);
     let [age, setAge] = useState(23);
-    function updatelit(){
-        setLit(!isLit);
-    }
   return (
     <div className={"room " + (isLit?"lit":"dark") }>
        Lit = {isLit? "lit" : "dark"}<br/>
